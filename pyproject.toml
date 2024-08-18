@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "git-cliff-generator"
+version = "0.1.0"
+description = ""
+authors = ["Daniel Tomlinson <dan.tomlinson@agentsoftware.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.12.4"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
