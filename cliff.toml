@@ -65,7 +65,7 @@ commit_parsers = [
     { message = "^doc", group = "📘 Documentation" },
     { message = "^perf", group = "🏎 Performance" },
     { message = "^refactor", group = "🛠 Refactor/Improvement" },
-    { message = "^style", group = "🎨 Styling" },
+    { message = "^style", group = "🎨 Styling", skip = true },
     { message = "^test", group = "🧪 Testing" },
     { message = "^build", group = "🧱 Build" },
     { body = ".*security", group = "🔐 Security"},
