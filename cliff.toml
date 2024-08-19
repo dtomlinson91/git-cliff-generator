@@ -22,7 +22,7 @@ body = """
     {% for commit in commits %}
         - {% if commit.breaking %}💥 **BREAKING CHANGE**: {% endif %}{{ commit.message | upper_first -}}
           {% if commit.body %}
-          {% for line in commit.body | split(pat="\n") %}
+          \n{% for line in commit.body | split(pat="\n") -%}
           {{ line | indent(prefix="    ", first=true) }}
           {% endfor -%}
           {% endif -%}
